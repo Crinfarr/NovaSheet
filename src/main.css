@@ -1,0 +1,115 @@
+@font-face {
+    font-family: ethnocentric;
+    src: url("/res/font/ethnocentric\ rg.otf");
+}
+@font-face {
+    font-family: ethnocentric;
+    src: url("/res/font/ethnocentric\ rg\ it.otf");
+    font-style: italic;
+}
+
+:root {
+    --dbrown: #1a1313;
+    --purple: #863462;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--dbrown);
+    /* background-image: url("/res/NovaSheet.PNG"); */
+    background: no-repeat url("/res/img/NovaSheet.PNG") var(--dbrown);
+    background-size: contain;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input{
+    position: absolute;
+    font-family: ethnocentric;
+    font-size: medium;
+    color: var(--purple);
+    margin: 0;
+    border-radius: 0;
+    border: 2px solid var(--purple);
+    background-color: var(--dbrown);
+}
+input#callsign {
+    left: 110px;
+    top:135px;
+    width: 235px;
+    height: 30px;
+}
+input#name {
+    left:110px;
+    top:175px;
+    width:235px;
+    height:30px;
+}
+input#pronouns {
+    left:420px;
+    top:175px;
+    width:145px;
+    height:30px;
+}
+input#sun {
+    left: 330px;
+    top:220px;
+    width: 20px;
+}
+input#moon {
+    left: 330px;
+    top:245px;
+    width: 20px;
+}input#shade {
+    left: 330px;
+    top:270px;
+    width: 20px;
+}
+
+select {
+    font-family: ethnocentric;
+    font-size:large;
+    color:var(--purple);
+    background-color: var(--dbrown);
+    border: 2px solid var(--purple);
+    position: absolute;
+}
+select#class {
+    left: 420px;
+    top: 135px;
+    height: 35px;
+}
+
+div.mods > * {
+    font-family: ethnocentric;
+    font-size: 12px;
+    position: absolute;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+}
+div.mods > p:nth-child(4n-3){
+    left:60px;
+}
+div.mods > p:nth-child(4n-2) {
+    left:200px;
+}
+div.mods > p:nth-child(4n-1) {
+    left:340px;
+}
+div.mods > p:nth-child(4n) {
+    left:470px;
+}
+div.mods > p:nth-child(-n+4) {
+    top:408px;
+}
+div.mods > p:nth-child(-n+8):not(:nth-child(-n+4)){
+    top:437px
+}
+div.mods > p:nth-child(-n+12):not(:nth-child(-n+8)) {
+    top:466px
+}

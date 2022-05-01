@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/src/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <input type="text" id="callsign" class="ClassDependent" maxlength="8">
+        <select id="class" class="ClassDependent">
+            <option hidden selected></option>
+            <option value="Pyre" style="color: #bd361a;">Pyre</option>
+            <option value="Scorch" style="color:#624386;">Scorch</option>
+            <option value="Voyager" style="color: #2a8aa1;">Voyager</option>
+            <option value="Warden" style="color: #f7b62b;">Warden</option>
+            <option value="Pox" style="color: #2eac1d;">Pox</option>
+            <option value="Grim" style="color: #51fffe;">Grim</option>
+            <option value="Drifter" style="color: #67251e;">Drifter</option>
+            <option value="Sanguine" style="color: #cc100d;">Sanguine</option>
+            <option value="Infernal" style="color: #710f5a;">Infernal</option>
+        </select>
+        <input type="text" id="name" class="ClassDependent" maxlength="8">
+        <input type="text" id="pronouns" class="ClassDependent" maxlength="9">
+        <input type="text" id="sun" class="ClassDependent" maxlength="1" value="1">
+        <input type="text" id="moon" class="ClassDependent" maxlength="1" value="1">
+        <input type="text" id="shade" class="ClassDependent" maxlength="1" value="1">
+        <div id="PyreMods" class="mods">
+            <p class="ClassDependent">Fury</p>
+            <p class="ClassDependent">Fury</p>
+            <p class="ClassDependent">Cool</p>
+            <p class="ClassDependent">Wellspring</p>
+            <p class="ClassDependent">Hardy</p>
+            <p class="ClassDependent">Hardy</p>
+            <p class="ClassDependent">Mercury</p>
+            <p class="ClassDependent">Honed</p>
+            <p class="ClassDependent">Quick-Strike</p>
+            <p class="ClassDependent">Retaliate</p>
+        </div>
+        <div hidden id="ScorchMods"></div>
+        <div hidden id="VoyagerMods"></div>
+        <div hidden id="WardenMods"></div>
+        <div hidden id="PoxMods"></div>
+        <div hidden id="GrimMods"></div>
+        <div hidden id="DrifterMods"></div>
+        <div hidden id="SanguineMods"></div>
+        <div hidden id="InfernalMods"></div>
+
+        <!--DONT WRITE BELOW HERE OR EVERYTHING BREAKS-->
+        <!--SERIOUSLY IT DEFINITELY NEEDS TO BE LAST!!-->
+        <script src="/src/main.js"></script>
+    </body>
+</html>
